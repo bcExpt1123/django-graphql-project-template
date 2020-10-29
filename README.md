@@ -1,6 +1,6 @@
 # Project Overview
 
-This project is template project to use to scaffold or create the initial structure to your graphql
+This project is template project to use to scaffold or create the initial structure of your graphql
 application using `django`, `graphene-django`, `djangorestframework` and `django-filter`.
 
 **PROJECT STRUCTURE**
