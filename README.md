@@ -45,22 +45,10 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-or 
-
-```sh
-. venv/bin/activate
-```
-
 For Windows only
 
 ```sh
 . venv/Scripts/activate
-```
-
-or 
-
-```sh
-./venv/Scripts/activate
 ```
 
 **Deactivating the virtual environment**
