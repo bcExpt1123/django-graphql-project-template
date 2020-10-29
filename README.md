@@ -16,7 +16,7 @@ application using `django`, `graphene-django`, `djangorestframework` and `django
 | `requirements.staging`    | Requirement file for staging mode                            |
 | `requirements.testing`    | Requirement file for testing mode                            |
 | `run.py`                  | Entrypoint for production mode                               |
-| `tox.ini`                 | Config file for liting, testing, coverage and ohter things   |
+| `tox.ini`                 | Config file for linting, testing, coverage and ohter things  |
 
 # Pre-requisites
 
@@ -27,20 +27,20 @@ application using `django`, `graphene-django`, `djangorestframework` and `django
 
 If you are using Windows, use git bash to run these commands.
 
-## Creating the project folder
+**Creating the project folder**
 
 ```sh
 mkdir awesome-graphql-api && cd awesome-graphql
 
 ```
 
-## Creating the virtual environment
+**Creating the virtual environment**
 
 ```sh
 python -m venv venv
 ```
 
-## Updating pip and installing pip-tools
+**Updating pip and installing pip-tools**
 
 ```sh
 python -m pip install --upgrade pip && pip install pip-tools
@@ -48,25 +48,25 @@ python -m pip install --upgrade pip && pip install pip-tools
 
 ## Compiling the requirement file
 
-### For development
+**For development**
 
 ```sh
 pip-compile -r requirements/develop.in -o requirements.develop
 ```
 
-### For production
+**For production**
 
 ```sh
 pip-compile -r requirements/production.in -o requirements.production
 ```
 
-### For staging
+**For staging**
 
 ```sh
 pip-compile -r requirements/staging.in -o requirements.staging
 ```
 
-### For testing
+**For testing**
 
 ```sh
 pip-compile -r requirements/testing.in -o requirements.testing
@@ -74,25 +74,25 @@ pip-compile -r requirements/testing.in -o requirements.testing
 
 ## Installing the dependencies
 
-### For development
+**For development**
 
 ```sh
 pip install -r requirements.develop
 ```
 
-### For production
+**For production**
 
 ```sh
 pip install -r requirements.production
 ```
 
-### For staging
+**For staging**
 
 ```sh
 pip install -r requirements.staging
 ```
 
-### For testing
+**For testing**
 
 ```sh
 pip install -r requirements.testing
@@ -122,13 +122,13 @@ mkdir <awesome-app>/domain/<awesome-app-domain> && python manage.py startapp -e 
 
 ## Running the app
 
-### For development
+**For development**
 
 ```sh
 python manage.py runserver
 ```
 
-### For production
+**For production**
 
 ```
 python run.py
@@ -136,14 +136,14 @@ python run.py
 
 ## Verifying
 
-Assuming that you have the link to the app for production mode is `app.io`:
+**Endpoint URL:** `http://<domain>/<path-to-your-graphql-endpoint>`  
 
-### For development
+**For development:** The domain is `localhost:8000` and the path to your graphql is `graphql/v1`
 
 Open the GraphQL Playground with http://localhost:8000/graphql/v1
 
-### For production
+**For production**: The domain is `awesome.graphql.io` and the path to your graphql is `graphql/v1`
 
-Open the GraphQL Playground with http://app.io/graphql/v1
+Open the GraphQL Playground with http:///awesome.graphql.io/graphql/v1
 
 > **Note:** change app.iow with the real endpoint for production.
