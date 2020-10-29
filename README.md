@@ -30,14 +30,43 @@ If you are using Windows, use git bash to run these commands.
 **Creating the project folder**
 
 ```sh
-mkdir awesome-graphql-api && cd awesome-graphql
-
+mkdir awesome-graphql-api && cd awesome-graphql-api
 ```
 
 **Creating the virtual environment**
 
 ```sh
 python -m venv venv
+```
+
+**Activating the virtual environment**
+
+```sh
+source venv/bin/activate
+```
+
+or 
+
+```sh
+. venv/bin/activate
+```
+
+For Windows only
+
+```sh
+. venv/Scripts/activate
+```
+
+or 
+
+```sh
+./venv/Scripts/activate
+```
+
+**Deactivating the virtual environment**
+
+```sh
+deactivate
 ```
 
 **Updating pip and installing pip-tools**
