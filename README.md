@@ -115,7 +115,7 @@ pip install -r requirements.staging
 pip install -r requirements.testing
 ```
 
-## Scaffolding the project
+## Scaffolding a project
 
 ```sh
 django-admin startproject --template https://github.com/danilobrinu/django-graphql-project-template/archive/master.zip <awesome-project> .
@@ -123,15 +123,20 @@ django-admin startproject --template https://github.com/danilobrinu/django-graph
 
 > **Example:** `django-admin startproject --template https://github.com/danilobrinu/django-graphql-project-template/archive/master.zip my-graphql-api`
 
-## Scaffolding the app
+## Scaffolding an app
 
 ```sh
 django-admin startapp --template https://github.com/danilobrinu/django-graphql-app-template/archive/master.zip <awesome-app>
 ```
 
-> **Example:** `python manage.py --template https://github.com/danilobrinu/django-graphql-app-template/archive/master.zip api_v1`
+**Example:** `python manage.py --template https://github.com/danilobrinu/django-graphql-app-template/archive/master.zip api_v1`
 
-## Scaffoling the app domain
+> **Note:** to read more about scaffoling an app, please go to: https://github.com/danilobrinu/django-graphql-app-template
+
+## Scaffoling a domain app
+
+To scaffold a domain app you need to go to inside of the domain folder part of an app. Only run this
+this command inside of the your `<awesome-app>/domain` folder. For instance: `api_v1/domain`
 
 ```sh
 django-admin startapp --template https://github.com/danilobrinu/django-graphql-app-domain-template/archive/master.zip <awesome-app-domain>
@@ -139,9 +144,9 @@ django-admin startapp --template https://github.com/danilobrinu/django-graphql-a
 
 **Example:** `django-admin startapp --template https://github.com/danilobrinu/django-graphql-app-domain-template/archive/master.zip post`
 
-> **Note:** Run this command inside of the your `<awesome-app>/domain` folder. For instance: `api_v1/domain`.
+> **Note:** to read more about scaffolding a domain app, please go to: https://github.com/danilobrinu/django-graphql-domain-app-template.
 
-## Running the app
+## Running an app
 
 **For development**
 
