@@ -1,7 +1,10 @@
 # Project Overview
 
-This project is template project to use to scaffold or create the initial structure of your graphql
-application using `django`, `graphene-django`, `djangorestframework` and `django-filter`.
+This project is a template project to scaffold or create the initial structure of your project
+using `django`, `graphene-django`, `djangorestframework` and `django-filter`. This project is helps
+you to build a graphql API `OpenCRUD compliance`.`
+
+To read more about OpenCRUD please go to: https://www.opencrud.org/
 
 **PROJECT STRUCTURE**
 
