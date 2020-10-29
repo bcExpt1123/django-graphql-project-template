@@ -5,18 +5,18 @@ application using `django`, `graphene-django`, `djangorestframework` and `django
 
 **PROJECT STRUCTURE**
 
-| File Name                 | Description                                                  |
-| ------------------------- | ------------------------------------------------------------ |
-| `├── config/`             | _This folder contains the source files for the config_       |
-| `├── requirements/`       | _This folder contains the source files for the requirements_ |
-| `.gitignore`              | Git ignore config file                                       |
-| `manage.py`               |                                                              |
-| `requirements.develop`    | Requirement file for development mode                        |
-| `requirements.production` | Requirement file for production mode                         |
-| `requirements.staging`    | Requirement file for staging mode                            |
-| `requirements.testing`    | Requirement file for testing mode                            |
-| `run.py`                  | Entrypoint for production mode                               |
-| `tox.ini`                 | Config file for linting, testing, coverage and ohter things  |
+| File Name                 | Description                                                   |
+| ------------------------- | ------------------------------------------------------------- |
+| `├── config/`             | _This folder contains the source files for the config._       |
+| `├── requirements/`       | _This folder contains the source files for the requirements._ |
+| `.gitignore`              | Git ignore config file                                        |
+| `manage.py`               |                                                               |
+| `requirements.develop`    | Requirement file for development mode.                        |
+| `requirements.production` | Requirement file for production mode.                         |
+| `requirements.staging`    | Requirement file for staging mode.                            |
+| `requirements.testing`    | Requirement file for testing mode.                            |
+| `run.py`                  | Entrypoint for production mode.                               |
+| `tox.ini`                 | Config file for linting, testing, coverage and ohter things.  |
 
 # Pre-requisites
 
@@ -121,21 +121,25 @@ pip install -r requirements.testing
 django-admin startproject --template https://github.com/danilobrinu/django-graphql-project-template/archive/master.zip <awesome-project> .
 ```
 
+> **Example:** `django-admin startproject --template https://github.com/danilobrinu/django-graphql-project-template/archive/master.zip my-graphql-api`
+
 ## Scaffolding the app
 
 ```sh
-python manage.py startapp --template https://github.com/danilobrinu/django-graphql-app-template/archive/master.zip <awesome-app>
+django-admin startapp --template https://github.com/danilobrinu/django-graphql-app-template/archive/master.zip <awesome-app>
 ```
 
-**Example:** `python manage.py --template https://github.com/danilobrinu/django-graphql-app-template/archive/master.zip api_v1`
+> **Example:** `python manage.py --template https://github.com/danilobrinu/django-graphql-app-template/archive/master.zip api_v1`
 
 ## Scaffoling the app domain
 
 ```sh
-mkdir <awesome-app>/domain/<awesome-app-domain> && python manage.py startapp -e py,graphql --template https://github.com/danilobrinu/django-graphql-app-domain-template/archive/master.zip <awesome-app-domain> <awesome-app>/domain/<awesome-app-domain>
+django-admin startapp --template https://github.com/danilobrinu/django-graphql-app-domain-template/archive/master.zip <awesome-app-domain>
 ```
 
-**Example:** `mkdir api_v1/domain/post && python manage.py startapp -e py,graphql --template https://github.com/danilobrinu/django-graphql-app-domain-template/archive/master.zip post api_v1/domain/post`
+**Example:** `django-admin startapp --template https://github.com/danilobrinu/django-graphql-app-domain-template/archive/master.zip post`
+
+> **Note:** Run this command inside of the your `<awesome-app>/domain` folder. For instance: `api_v1/domain`.
 
 ## Running the app
 
@@ -155,11 +159,11 @@ python run.py
 
 **Endpoint URL:** `http://<domain>/<path-to-your-graphql-endpoint>`
 
-**For development:** The domain is `localhost:8000` and the path to your graphql is `graphql/v1`
+**For development:** The domain is `localhost:8000` and the path to your graphql is `graphql/v1`.
 
 Open the GraphQL Playground with http://localhost:8000/graphql/v1
 
-**For production**: The domain is `awesome.graphql.io` and the path to your graphql is `graphql/v1`
+**For production**: The domain is `awesome.graphql.io` and the path to your graphql is `graphql/v1`.
 
 Open the GraphQL Playground with http:///awesome.graphql.io/graphql/v1
 
