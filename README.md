@@ -45,7 +45,7 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-For Windows only
+_For Windows only_
 
 ```sh
 . venv/Scripts/activate
@@ -153,7 +153,7 @@ python run.py
 
 ## Verifying
 
-**Endpoint URL:** `http://<domain>/<path-to-your-graphql-endpoint>`  
+**Endpoint URL:** `http://<domain>/<path-to-your-graphql-endpoint>`
 
 **For development:** The domain is `localhost:8000` and the path to your graphql is `graphql/v1`
 
