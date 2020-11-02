@@ -175,4 +175,4 @@ Open the GraphQL Playground with http://localhost:8000/graphql/v1
 
 Open the GraphQL Playground with http:///awesome.graphql.io/graphql/v1
 
-> **Note:** change app.iow with the real endpoint for production.
+> **Note:** change `awesome.graphql.io` to your endpoint for production.
